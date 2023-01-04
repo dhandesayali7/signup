@@ -108,7 +108,7 @@ export default function Home() {
           </form>
           <p className="mt-3">
             Already Have an Account <span>
-            <NavLink to="/login">SingIn</NavLink > </span>
+            <NavLink to="/login">SignIn</NavLink > </span>
           </p>
         </div>
       </section>
