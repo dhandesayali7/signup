@@ -33,13 +33,13 @@ const Login = () => {
     const { email, password } = inpval;
 
     if (email === "") {
-      alert("email field is requred");
+      alert("email field is required");
     } else if (!email.includes("@")) {
       alert("plz valid email");
     } else if (password === "") {
-      alert("password field is requred");
+      alert("password field is required");
     } else if (password.length < 5) {
-      alert("password lenght greater than five ");
+      alert("password length greater than five ");
     } else {
       if (getuserArr && getuserArr.length) {
         const userdata = JSON.parse(getuserArr);
@@ -47,7 +47,7 @@ const Login = () => {
           return element.email === email && element.password === password;
         });
         if (userlogin.length === 0) {
-          alert("invalis details");
+          alert("invalid details");
         } else {
           console.log("user login succesfully");
           localStorage.setItem("user_login", JSON.stringify(userlogin));

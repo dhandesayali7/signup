@@ -32,28 +32,23 @@ export default function Home() {
   const {name,email,date,password} =inpval;
 
   if(name === ""){
-    alert("name field is requred")
+    alert("name field is required")
   }else if(email ===""){
-    alert("email field is requred")
+    alert("email field is required")
   }else if(!email.includes ("@")){
     alert("plz valid email")
   }else if(date ===""){
-    alert("date field is requred")
+    alert("date field is required")
   }else if(password ===""){
-    alert("password field is requred")
+    alert("password field is required")
   }else if(password.length < 5){
-    alert("password lenght greater than five ")
+    alert("password length greater than five ")
   }else {
     console.log("data added succesfully");
      
-    localStorage.setItem("useryoutube",JSON.stringify([...data,inpval]));
-
-
+    localStorage.setItem("user",JSON.stringify([...data,inpval]));
 }
-  
-
-
-  }
+   }
   return (
     <div className="container  mt-3 my-3">
       <section>
